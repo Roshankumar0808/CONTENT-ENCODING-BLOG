@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog2 | Content Encoding </title>
+</head>
+<body>
+    <h1>Encoding our HTTP</h1>
+    <p>Encoding HTTP save a lot of bandwidth and make our web as well as mobile application even faster and that too for free
+        but it is generally seen that most developer does not have a depth knowledge anout this and that leads to left it to be handles automatically by out web server</p>P
+    <br>
+    <p>
+        With a little knowldege about encoding our HTTP we can speed up our web app and our API and all out HTTP responses in no time at all.
+    </p>
+      <br>
+      <h2>What is content encoding</h2>
+      <p>Content encoding is baasically a cover sheet over an HTTP request .It is very impoetant that we do not confuse it with transfer encoding which is used to describe an encoding at a certain level.</p>
+      <br>
+      <h2>Why should we encode our content??</h2>
+      <p>Content encoding is mainly done to save the bandwidth when we encode our content we can shrink all our request enormously.The samller the request the fatser data transfer it is ,fewer bandwidth costs for your servers and lower data costs for clients and in less data</p>
+      <p>It happens automatically in many CDNs but in general it largely forgoten by many developers,that lead to unncessarily increaase in data amount due to huge transfers</p>
+      <br>
+      <p>The best example of content enccoding is given by OYO rooms in which they reduced their latency by 37% and google to saved a lot of bandwidth by changing their content encoding configuration</p>
+    <br>
+    <h2>What are some of the HTTP content that we can use</h2>
+    <br>
+    <p>So here  are I am adding some of the  official registry of encoding,we can directly read these from there official docs some of the important one are:
+        <p>identity - an encoded body, it's just raw content. Valid, but you might as well just omit the header entirely.</p>
+<p>gzip - the standard: the content is compressed using gzip, widely used & supported almost everywhere.</p>
+
+<p>br - the new kid: the content is compressed using Brotli, a new (well, 2013) compression algorithm originally used in WOFF font files. Supported in most browsers for a couple of years now, and significantly more powerful than gzip.</p>
+<p>zstd - the very very new kid: the content is compressed using Zstandard, a compression algorithm from Facebook designed to compress better than gzip, but also especially focused on allowing much much faster decompression (at least 3.5x faster than Brotli or Gzip, according to their benchmarks).
+    </p>
+    <br>
+    <h2>Next Move??</h2>
+    <p>Ok so now after reading the importance of Encoding hope we will start giving some time in encoding our content .Think about the positive consequence of encoding our content through which we can reduce a huge bandwidth and make our system much faster.     </p>
+        <h2> Thank You</h2>
+</body>
+</html>
